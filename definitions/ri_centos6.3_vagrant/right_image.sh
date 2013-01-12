@@ -1,4 +1,4 @@
-yum -y install libxml2-devel libxslt-devel git lsb dig bind-utils bash git-core
+yum -y install libxml2-devel libxslt-devel git lsb bind-utils bash git-core
 
 mkdir -p /etc/rightscale.d; echo -n none > /etc/rightscale.d/cloud
 
