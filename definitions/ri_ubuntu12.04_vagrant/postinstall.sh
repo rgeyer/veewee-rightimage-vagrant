@@ -30,9 +30,8 @@ rm /home/vagrant/VBoxGuestAdditions_$VBOX_VERSION.iso
 usermod -a -G sudo vagrant
 cp /etc/sudoers /etc/sudoers.orig
 sed -i -e 's/%sudo   ALL=(ALL:ALL) ALL/%sudo   ALL=(ALL:ALL) NOPASSWD:ALL/' /etc/sudoers
-
-# Add puppet user and group
-adduser --system --group --home /var/lib/puppet puppet
+echo "vagrant        ALL=(ALL)       NOPASSWD: ALL" >> /etc/sudoers.d/vagrant
+chmod 0440 /etc/sudoers.d/vagrant
 
 # Install NFS client
 apt-get -y install nfs-common
