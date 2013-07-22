@@ -5,9 +5,9 @@ Veewee::Session.declare({
   :disk_format => 'VDI',
   :hostiocache => 'off',
   :os_type_id => 'RedHat6_64',
-  :iso_file => "CentOS-6.3-x86_64-minimal.iso",
-  :iso_src => "http://mirror.symnds.com/distributions/CentOS-vault/6.3/isos/x86_64/CentOS-6.3-x86_64-minimal.iso",
-  :iso_md5 => "087713752fa88c03a5e8471c661ad1a2",
+  :iso_file => "CentOS-6.4-x86_64-minimal.iso",
+  :iso_src => "http://yum.singlehop.com/CentOS/6.4/isos/x86_64/CentOS-6.4-x86_64-minimal.iso",
+  :iso_md5 => "4a5fa01c81cc300f4729136e28ebe600",
   :iso_download_timeout => 1000,
   :boot_wait => "10",
   :boot_cmd_sequence => [
@@ -27,7 +27,6 @@ Veewee::Session.declare({
   :postinstall_files => [
     "base.sh",
     "ruby.sh",
-    "chef.sh",
     "vagrant.sh",
     "virtualbox.sh",
     "iptables.sh",

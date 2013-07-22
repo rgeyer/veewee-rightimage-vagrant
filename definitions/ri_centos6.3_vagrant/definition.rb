@@ -31,8 +31,8 @@ Veewee::Session.declare({
     "vagrant.sh",
     "virtualbox.sh",
     "iptables.sh",
-    "cleanup.sh",
-    "right_image.sh"
+    "right_image.sh",
+    "cleanup.sh"
   ],
   :postinstall_timeout => 10000
 })
